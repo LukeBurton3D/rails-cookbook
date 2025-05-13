@@ -10,3 +10,22 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar {
+  background-color: white;
+  padding: 5px 20px;
+  img {
+    width: 50px;
+  }
+
+  a {
+    color: black;
+    &:hover {
+    color: goldenrod;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}

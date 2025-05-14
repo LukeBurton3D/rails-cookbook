@@ -3,6 +3,7 @@
 
   <%= simple_form_for(@category) do |f| %>
     <%= f.input :name, placeholder: "Category name" %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit class: "btn btn-outline-dark" %>
   <% end %>
 </div>

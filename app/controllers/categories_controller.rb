@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.all
+    @categories = Category.with_attached_photo.all
+    # @categories = Category.all
   end
 
   def new
@@ -24,6 +25,6 @@ class CategoriesController < ApplicationController
   private
 
   def category_params
-    params.require(:category).permit(:name)
+    params.require(:category).permit(:name, :photo)
   end
 end
